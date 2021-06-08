@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shooter</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin:0px;
+        }
+        .bor{
+            border-radius:20px ;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</head>
+<body class="bg-black">
+    
+    <!-- auto play background music -->
+    <embed src="bmusic.mp3" loop="true" autostart="true" width="2" height="0">
+
+
+    <!-- score -->
+    <div class="fixed text-white text-sm ml-2 mt-1 select-none">Score: <span id="score">0</span></div>
+
+
+
+
+    <!-- pop up box  -->
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+        <div class="bg-white max-w-md w-full p-6 text-center bor">
+            <h1 class="text-4xl font-bold leading-none" id="display-points">0</h1>
+            <p class="text-sm text-gray-700 mb-3">Points</p>
+            <div>
+                <button class="bg-blue-500 text-white w-full py-3 rounded-full" id="start-game">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- canvas -->
+
+    <canvas id="game-screen"></canvas>
+
+
+
+</body>
+</html>
