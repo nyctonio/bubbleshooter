@@ -1,6 +1,6 @@
 # Bubble Shooter 
 
-## A HTML Canvas Game Made Using HTML,CSS,JS,TailwindCSS,GSAP
+## A HTML Canvas Game Made Using HTML, CSS, JS, TailwindCSS, GSAP
 
 [Play Game](https://nyctonio.github.io/bubbleshooter/)
 
